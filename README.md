@@ -1,6 +1,12 @@
 # Team Directory
 
-A command line tool that displays team members.
+A simple command-line tool that displays team members.
+
+## Features
+- Display team members
+- Store team information locally
+
+## Running the application
 
 Run:
 
