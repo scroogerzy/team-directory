@@ -23,4 +23,17 @@ def search_member(keyword):
 
 
 display_members()
-search_member("Developer")
+search_member("Developer")   
+
+def filter_by_role(role):
+    members = load_members()
+
+    print("\nFiltered Results:")
+    for member in members:
+        if role.lower() in member.lower():
+            print(member.strip())
+filter_by_role("Developer")
+
+
+
+
