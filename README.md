@@ -17,3 +17,5 @@ Run:
 
 python main.py
 updated directly from GitHub
+Local update before pulling
+
