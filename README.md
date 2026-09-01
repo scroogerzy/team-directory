@@ -1,5 +1,4 @@
-# Team Directory
-
+# Employee Directory Application
 A simple command-line tool that displays team members.
 
 ## Features
