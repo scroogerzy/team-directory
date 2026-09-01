@@ -14,3 +14,17 @@ def display_members():
 
 
 display_members()
+def load_members():
+    with open("team.txt", "r") as file:
+        return file.readlines()
+
+
+def search_member(keyword):
+    members = load_members()
+
+    for member in members:
+        if keyword.lower() in member.lower():
+            print(member.strip())
+
+
+search_member("Developer")
