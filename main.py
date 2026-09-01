@@ -1,9 +1,16 @@
-def load_team():
-    with open("team.txt") as file:
-        return [x.strip() for x in file.readlines()]
+def load_members():
+    with open("team.txt", "r") as file:
+        return file.readlines()
 
-def show_team():
-    for member in load_team():
-        print(member)
 
-show_team()
+def display_members():
+    members = load_members()
+
+    print("Team Directory")
+    print("----------------")
+
+    for member in members:
+        print(member.strip())
+
+
+display_members()
