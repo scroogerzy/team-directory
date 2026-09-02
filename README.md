@@ -29,6 +29,10 @@ This tool provides a simple way to manage and search team members.
 - Store team information locally
 - Support role-based filtering
 >>>>>>> 80e8f40 (Document role filtering feature)
+
+## Maintainer
+
+Team Directory is maintained as part of the Git Fundamentals assignment.
 ## Project
 
 This tool provides a simple way to manage and search team members.
