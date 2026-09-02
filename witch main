@@ -1,0 +1,14 @@
+*   [33m8e1b53f[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m Resolve README merge conflict
+[31m|[m[32m\[m  
+[31m|[m * [33md335582[m[33m ([m[1;32mfeature/update-readme[m[33m)[m Update README project title
+* [32m|[m [33mea40e6b[m Update README application title
+[32m|[m[32m/[m  
+* [33m38195a3[m Add member search functionality
+* [33md49c873[m Add team member search feature
+* [33ma52bd76[m Document team directory usage
+* [33m75e21e3[m Display team directory members
+* [33me665651[m[33m ([m[1;31morigin/main[m[33m)[m Improve team data handling
+* [33mf26abe0[m Document how to run team directory
+* [33m67304e6[m Display team members from directory
+* [33m56806df[m Add sample team directory data
+* [33mac0ab64[m Initialize repository with ignore rules and documentation

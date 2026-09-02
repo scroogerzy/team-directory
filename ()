@@ -1,0 +1,30 @@
+[1mdiff --git a/main.py b/main.py[m
+[1mindex 67eeb09..41cca53 100644[m
+[1m--- a/main.py[m
+[1m+++ b/main.py[m
+[36m@@ -1,9 +1,16 @@[m
+[31m-def load_team():[m
+[31m-    with open("team.txt") as file:[m
+[31m-        return [x.strip() for x in file.readlines()][m
+[32m+[m[32mdef load_members():[m
+[32m+[m[32m    with open("team.txt", "r") as file:[m
+[32m+[m[32m        return file.readlines()[m
+ [m
+[31m-def show_team():[m
+[31m-    for member in load_team():[m
+[31m-        print(member)[m
+ [m
+[31m-show_team()[m
+\ No newline at end of file[m
+[32m+[m[32mdef display_members():[m
+[32m+[m[32m    members = load_members()[m
+[32m+[m
+[32m+[m[32m    print("Team Directory")[m
+[32m+[m[32m    print("----------------")[m
+[32m+[m
+[32m+[m[32m    for member in members:[m
+[32m+[m[32m        print(member.strip())[m
+[32m+[m
+[32m+[m
+[32m+[m[32mdisplay_members()[m
+\ No newline at end of file[m
