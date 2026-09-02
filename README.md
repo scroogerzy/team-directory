@@ -19,7 +19,20 @@ updated directly from GitHub
 Run:
 
 python main.py
+<<<<<<< HEAD
 
 ## Project
 
 This tool provides a simple way to manage and search team members.
+=======
+- Display team members
+- Store team information locally
+- Support role-based filtering
+>>>>>>> 80e8f40 (Document role filtering feature)
+## Project
+
+This tool provides a simple way to manage and search team members.
+
+- Display team members
+- Store team information locally
+- Support role-based filtering
