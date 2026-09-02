@@ -34,6 +34,4 @@ def filter_by_role(role):
             print(member.strip())
 filter_by_role("Developer")
 
-
-
-
+#your code looks good but i don't do python 
