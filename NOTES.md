@@ -85,3 +85,7 @@ f. "Changed line 47 of notes.md"
 Bad.
 Replace with:
 "Document Git workflow decisions"
+
+## Intentional Conflict Resolution
+
+The conflict happened because both branches changed the same line in README.md. Git could not automatically decide which version should remain. I resolved it by combining the useful information from both branches into one final README version.
