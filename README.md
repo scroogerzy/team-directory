@@ -19,3 +19,7 @@ updated directly from GitHub
 Run:
 
 python main.py
+
+## Project
+
+This tool provides a simple way to manage and search team members.
