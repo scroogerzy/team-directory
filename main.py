@@ -33,6 +33,15 @@ def display_member_count(members):
     print("------------")
     print("Total members: {}".format(len(members)))
 
+    role_counts = {}
+
+    for member in members:
+        role = member["role"]
+        role_counts[role] = role_counts.get(role, 0) + 1
+
+    for role, count in role_counts.items():
+        print("{}: {}".format(role, count))
+
 
 def search_member(members, keyword):
     keyword = keyword.lower()
