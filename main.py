@@ -1,37 +1,54 @@
+import json
+import os
+
+DATA_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "team.json")
+
+
 def load_members():
-    with open("team.txt", "r") as file:
-        return file.readlines()
+    """Read team.json and return a list of member dictionaries."""
+    try:
+        with open(DATA_FILE, "r") as file:
+            return json.load(file)
+    except FileNotFoundError:
+        print("Could not find {}.".format(DATA_FILE))
+        return []
+    except json.JSONDecodeError as error:
+        print("{} is not valid JSON: {}".format(DATA_FILE, error))
+        return []
 
 
-def display_members():
-    members = load_members()
+def format_member(member):
+    return "{} - {}".format(member["name"], member["role"])
 
+
+def display_members(members):
     print("Team Directory")
     print("----------------")
 
     for member in members:
-        print(member.strip())
+        print(format_member(member))
 
 
-def search_member(keyword):
-    members = load_members()
+def search_member(members, keyword):
+    keyword = keyword.lower()
 
     print("\nSearch Results:")
     for member in members:
-        if keyword.lower() in member.lower():
-            print(member.strip())
+        if keyword in member["name"].lower() or keyword in member["role"].lower():
+            print(format_member(member))
 
 
-display_members()
-search_member("Developer")   
-
-def filter_by_role(role):
-    members = load_members()
+def filter_by_role(members, role):
+    role = role.lower()
 
     print("\nFiltered Results:")
     for member in members:
-        if role.lower() in member.lower():
-            print(member.strip())
-filter_by_role("Developer")
+        if role in member["role"].lower():
+            print(format_member(member))
 
-#your code looks good but i don't do python 
+
+members = load_members()
+
+display_members(members)
+search_member(members, "Developer")
+filter_by_role(members, "Developer")

@@ -2,4 +2,4 @@ Kaamogelo,Developer
 Andiswa,Developer
 John, Developer
 Sarah, Designer
-Mike, Tester
+Kgomotso, Tester
