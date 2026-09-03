@@ -93,3 +93,57 @@ The conflict happened because both branches changed the same line in README.md. 
 
 I added a team summary to make it easier to see the size of the team without counting the members manually. It shows the total number of members as well as how many people are in each role, which should make the directory more useful as the team grows.
 
+## Assignment 1.2
+
+### Question 1 — Why fork, not branch, this time?
+
+In Assignment 1.1 I worked inside my own repository where I already had write access. In Assignment 1.2 I contributed to another person's repository, so I needed to fork their repository first. Forking creates my own copy where I can make changes and push branches without needing permission on the original repository. If I only cloned my partner's repository, I would not be able to push branches directly unless I had been given write access.
+
+### Question 2 — PR description: bad vs. good
+
+Bad PR Description:
+
+Added role search.
+
+Good PR Description:
+
+What:
+Added a role search feature that allows users to search for team members by role.
+
+Why:
+The application previously only supported searching by name. This change makes it easier to find all team members with a specific role.
+
+How to verify:
+1. Run python main.py.
+2. Enter an existing role.
+3. Confirm matching team members are displayed.
+4. Enter a role that does not exist.
+5. Confirm a not found message is displayed.
+
+The second description is easier to review because it explains the purpose of the change and gives clear testing steps for the reviewer.
+
+### Question 3 — Triaging review comments
+
+A blocking comment identifies a problem that should be fixed before the code is merged. A nit or suggestion is an optional improvement that does not prevent merging. A question asks for clarification or additional information.
+
+If a reviewer does not label a comment, I will treat it as blocking if it affects correctness, usability, or maintainability. Otherwise, I will treat it as a suggestion or question.
+
+### Question 4 — When fetch beats pull
+
+I would use git fetch before git pull when I want to inspect changes on origin/main before updating my local branch. This allows me to see new commits, review incoming work, and check for potential conflicts before merging those changes into my local repository.
+
+### What you contributed, and why you chose it
+
+I contributed a role search feature to my partner's team-directory project. I chose it because the application could already search by name, but there was no way to find team members by role. This makes the directory more useful when working with larger teams.
+
+### A comment you received that changed your code
+
+My reviewer pointed out that the role search was displaying the "not found" message twice when no matching role existed. I fixed the logic so the message only appears once, improving the user experience and output accuracy.
+
+### A comment you gave that you stand by
+
+I requested that the new team summary feature be documented in NOTES.md before merging. I believe this was important because future contributors should understand why the feature was added and how it improves the project.
+
+### Fetch vs. pull, in practice
+
+After running git fetch, I was able to inspect the remote changes before updating my local branch. I could see commits from another contributor on origin/main before they were merged into my local copy. This showed me that fetch is useful when I want to review incoming changes before running git pull.
