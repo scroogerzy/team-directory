@@ -28,6 +28,11 @@ def display_members(members):
     for member in members:
         print(format_member(member))
 
+def display_member_count(members):
+    print("\nTeam Summary")
+    print("------------")
+    print("Total members: {}".format(len(members)))
+
 
 def search_member(members, keyword):
     keyword = keyword.lower()
@@ -50,5 +55,6 @@ def filter_by_role(members, role):
 members = load_members()
 
 display_members(members)
+display_member_count(members)
 search_member(members, "Developer")
 filter_by_role(members, "Developer")
