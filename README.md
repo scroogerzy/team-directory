@@ -19,6 +19,17 @@ updated directly from GitHub
 Run:
 
 python main.py
+
+## Data
+
+Team members are stored in `team.json` as a list of objects:
+
+    [
+      { "name": "Kaamogelo", "role": "Developer" }
+    ]
+
+Each member is a record with named fields, so new fields (email, team,
+start date) can be added without changing how the file is parsed.
 <<<<<<< HEAD
 
 ## Project
