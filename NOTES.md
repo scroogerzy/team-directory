@@ -88,3 +88,8 @@ Replace with:
 ## Intentional Conflict Resolution
 
 The conflict happened because both branches changed the same line in README.md. Git could not automatically decide which version should remain. I resolved it by combining the useful information from both branches into one final README version.
+
+## Team Summary Feature
+
+I added a team summary to make it easier to see the size of the team without counting the members manually. It shows the total number of members as well as how many people are in each role, which should make the directory more useful as the team grows.
+
